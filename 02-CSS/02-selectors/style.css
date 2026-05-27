@@ -1,0 +1,27 @@
+/* Element Selector */
+
+h1 {
+    color: blue;
+}
+
+/* Class Selector */
+
+.heading {
+    color: red;
+}
+
+.text {
+    font-size: 20px;
+}
+
+/* ID Selector */
+
+#main-heading {
+    background-color: yellow;
+}
+
+/* Universal Selector */
+
+* {
+    font-family: Arial;
+}
