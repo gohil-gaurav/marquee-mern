@@ -1,128 +1,193 @@
-:root {
-    --blue: #0b5fff;
-    --yellow: #ffd200;
-    --text: #111827;
-    --muted: #6b7280;
-    --surface: #ffffff;
-    --surface-muted: #f2f4f7;
-    --shadow: 0 18px 32px rgba(15, 23, 42, 0.08);
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Manrope", "Segoe UI", sans-serif;
+    font-family: Arial, sans-serif;
 }
 
-html,
 body {
+    background-color: #f1f2f4;
+}
+
+/* HEADER */
+
+header {
     width: 100%;
-    min-height: 100vh;
+    background-color: white;
+    padding: 15px 30px;
 }
 
-body {
-    background: linear-gradient(135deg, #f7f8fb 0%, #eef1f7 100%);
-    color: var(--text);
-}
 
-.topbar {
-    background: var(--surface);
-    box-shadow: var(--shadow);
-}
-
-.topbar__inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 14px 24px;
+.top-nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    gap: 16px;
-}
-
-.topbar__left {
-    display: flex;
     align-items: center;
-    gap: 12px;
 }
 
-.pill {
-    display: inline-flex;
+/* LEFT SIDE */
+
+.top-left {
+    display: flex;
+    gap: 15px;
+}
+
+.flipkart-btn,
+.travel-btn {
+    border: none;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.flipkart-btn {
+    background-color: #ffe500;
+}
+
+.travel-btn {
+    background-color: #e8e8e8;
+}
+
+/* RIGHT SIDE */
+
+.top-right {
+    display: flex;
     align-items: center;
     gap: 10px;
-    padding: 10px 18px;
-    border-radius: 999px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 15px;
-    letter-spacing: 0.2px;
 }
 
-.pill--brand {
-    background: var(--yellow);
-    color: var(--blue);
+.top-right i {
+    font-size: 22px;
 }
 
-.brand-icon {
-    width: 22px;
-    height: 22px;
-    display: grid;
-    place-items: center;
-    border-radius: 8px;
-    background: rgba(11, 95, 255, 0.12);
-    font-size: 16px;
-    font-weight: 800;
-    text-transform: lowercase;
-}
-
-.pill--travel {
-    background: var(--surface-muted);
-    color: #1f2933;
-}
-
-.pill__icon {
-    width: 18px;
-    height: 18px;
-    fill: #f05a4f;
-}
-
-.topbar__right {
+.top-right span {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
-.location {
+.top-right a {
+    text-decoration: none;
+    color: #2874f0;
+    font-size: 18px;
+}
+
+
+.bottom-nav {
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    /* border-bottom: rgb(165, 165, 165) 2px solid; */
+}
+
+
+.color-bars-container {
+    width: 100%;
+    height: 55px;
+    background-color: #d6d4d4;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    gap: 10px;
+}
+
+.color-bar {
+    height: 100%;
+}
+
+.color-bar-1 {
+    flex: 7;
+    background-color: #6cf5c9;
+}
+
+.color-bar-2 {
+    flex: 3;
+    background-color: #8af473;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.menu-item {
     display: flex;
     align-items: center;
     gap: 8px;
-    flex-wrap: wrap;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.menu-item i {
+    font-size: 22px;
+}
+.nav-links-container{
+    width: 100%;
+    padding-top: 20px;
+
+}
+#nav-links{
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 8px;
+    background-color: #00f204; /* Bright green background from your image */
+}
+
+.icone-item {
+    flex: 1;
+    height: 70px;
+    background-color: #eaebf1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 6px;
     font-size: 14px;
-    font-weight: 600;
+    color: #333;
 }
 
-.location__icon {
-    width: 16px;
-    height: 16px;
-    fill: #111827;
+/* AD BANNERS */
+.ad-banner-container {
+    width: 100%;
+    padding: 20px;
+    background-color: #d9d9d9;
+    margin-top: 10px;
 }
 
-.location__text {
-    color: var(--muted);
+.ad-banners {
+    display: flex;
+    gap: 15px;
+    height: 180px;
 }
 
-.location__link {
-    color: var(--blue);
-    text-decoration: none;
-    font-weight: 700;
-    white-space: nowrap;
+.ad-banner {
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #000;
 }
 
-.location__link:hover {
-    text-decoration: underline;
+.ad-banner-1 {
+    flex: 1;
+    background-color: #00ffff;
 }
 
-.location__arrow {
-    font-weight: 700;
+.ad-banner-2 {
+    flex: 1.2;
+    background-color: #d61c3c;
 }
 
+.ad-banner-3 {
+    flex: 0.6;
+    background-color: #f5f5dc;
+}
