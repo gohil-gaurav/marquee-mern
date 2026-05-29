@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Display and Position</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    padding:20px;
+}
+
+.section{
+    margin-bottom:50px;
+    border:1px solid #ddd;
+    padding:20px;
+}
+
+.box{
+    width:100px;
+    height:100px;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:10px;
+}
+
+/* Display Examples */
+
+.block{
+    display:block;
+    background:steelblue;
+}
+
+.inline{
+    display:inline;
+    background:tomato;
+    padding:10px;
+}
+
+.inline-block{
+    display:inline-block;
+    background:green;
+}
+
+/* Position Examples */
+
+.relative-parent{
+    position:relative;
+    height:250px;
+    background:#f4f4f4;
+    margin-top:20px;
+}
+
+.relative-box{
+    position:relative;
+    left:50px;
+    background:orange;
+}
+
+.absolute-box{
+    position:absolute;
+    top:20px;
+    right:20px;
+    background:red;
+}
+
+.fixed-box{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:black;
+}
+
+.sticky-box{
+    position:sticky;
+    top:0;
+    background:purple;
+    padding:15px;
+    color:white;
+}
+
+</style>
+</head>
+<body>
+
+<div class="sticky-box">
+    Sticky Position
+</div>
+
+<h1>Display and Position</h1>
+
+<div class="section">
+
+    <h2>Display Property</h2>
+
+    <div class="box block">Block</div>
+
+    <span class="inline">Inline</span>
+
+    <div class="box inline-block">
+        Inline-Block
+    </div>
+
+</div>
+
+<div class="section">
+
+    <h2>Position Property</h2>
+
+    <div class="relative-parent">
+
+        <div class="box relative-box">
+            Relative
+        </div>
+
+        <div class="box absolute-box">
+            Absolute
+        </div>
+
+    </div>
+
+</div>
+
+<div class="box fixed-box">
+    Fixed
+</div>
+
+</body>
+</html>

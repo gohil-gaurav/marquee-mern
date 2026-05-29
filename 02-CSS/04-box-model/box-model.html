@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Box Model Visual</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+h1{
+    margin-bottom:50px;
+}
+
+.margin{
+    background:#d6c2ff;
+    padding:40px;
+    text-align:center;
+}
+
+.border{
+    background:#444;
+    padding:30px;
+}
+
+.padding{
+    background:#4f8df7;
+    padding:30px;
+}
+
+.content{
+    background:white;
+    width:300px;
+    height:150px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:24px;
+    font-weight:bold;
+}
+
+.labels{
+    margin-top:30px;
+    line-height:2;
+    font-size:18px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>CSS Box Model</h1>
+
+<div class="margin">
+
+    Margin
+
+    <div class="border">
+
+        Border
+
+        <div class="padding">
+
+            Padding
+
+            <div class="content">
+                Content
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="labels">
+
+    <p>🟪 Margin → Space outside the border</p>
+    <p>⬛ Border → Surrounds the padding and content</p>
+    <p>🟦 Padding → Space between content and border</p>
+    <p>⬜ Content → Actual text/image inside element</p>
+
+</div>
+
+</body>
+</html>
