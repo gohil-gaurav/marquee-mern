@@ -344,7 +344,9 @@ main {
   font-weight: 600;
 }
 
-/* Footer */
+/* =========================
+   FOOTER
+========================= */
 footer {
   width: 100vw;
   background-color: rgb(39, 38, 38);
