@@ -414,3 +414,147 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* ==========================
+   FLIPKART FOOTER
+========================== */
+
+footer {
+  width: 100%;
+  background: #212121;
+  color: white;
+  margin-top: 50px;
+}
+
+.footer-top {
+  max-width: 1400px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns:
+    1fr
+    1fr
+    1fr
+    1fr
+    1.3fr
+    1.3fr;
+
+  gap: 30px;
+
+  padding: 40px 50px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column h4 {
+  color: #878787;
+  font-size: 12px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.footer-column a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-address p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: white;
+}
+
+.border-left {
+  border-left: 1px solid #454d5e;
+  padding-left: 30px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 18px;
+  margin-top: 15px;
+}
+
+.social-icons i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  border-top: 1px solid #454d5e;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  flex-wrap: wrap;
+  gap: 20px;
+
+  padding: 20px;
+}
+
+.footer-bottom-item {
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer-bottom-item i {
+  color: #f7c600;
+  margin-right: 8px;
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+.payment-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.payment-icons img {
+  width: 40px;
+  height: auto;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 1200px) {
+  .footer-top {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .border-left {
+    border-left: none;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+}
