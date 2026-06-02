@@ -403,21 +403,6 @@ footer {
   color: var(--wh-slate-800);
 }
 
-@media (max-width: 1100px) {
-  #spotlight-items-container {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 700px) {
-  #spotlight-items-container {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* ==========================
-   FLIPKART FOOTER
-========================== */
 
 footer {
   width: 100%;
@@ -526,35 +511,4 @@ footer {
 .payment-icons img {
   width: 40px;
   height: auto;
-}
-
-/* ==========================
-   RESPONSIVE
-========================== */
-
-@media (max-width: 1200px) {
-  .footer-top {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .border-left {
-    border-left: none;
-    padding-left: 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer-top {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 500px) {
-  .footer-top {
-    grid-template-columns: 1fr;
-  }
 }
