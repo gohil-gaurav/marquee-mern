@@ -178,7 +178,11 @@ footer {
   color: var(--footer-color);
   display: flex;
   align-items: center;
-  justify-content: spa:root {
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+:root {
   --bg: #212529;
   --sidebar-bg: #343a40;
   --panel-bg: #2b3035;
@@ -398,15 +402,11 @@ main {
 footer {
   grid-area: footer;
   background: var(--bg);
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--border-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1.5rem;
-  font-size: 0.85rem;
-  color: var(--muted);
-}ce-between;
-  padding: 0 1.5rem;
-  border-top: 1px solid var(--border-color);
   font-size: 0.9rem;
+  color: var(--muted);
 }
