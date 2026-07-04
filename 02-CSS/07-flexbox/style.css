@@ -1,0 +1,28 @@
+.section{
+    background:slategrey;
+    align-items: center;
+    height: 500px;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.box{
+    background: white;
+
+    padding: 20px;
+}
+
+
+#box2{
+    order: -1;
+}
+#box3{
+    align-self: flex-start;
+}  
+
+#box1{
+    align-self: flex-end;
+}
