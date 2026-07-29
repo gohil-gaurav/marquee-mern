@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            width: 400px;
+            height: 500px;
+            color: aliceblue;
+            background-color: black;
+            border-radius: 15px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+
+
+        .circle{
+            width: 250px;
+            height: 250px;
+            background-color: white;
+            border-radius: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            transition: all 0.3s ease;
+        }
+
+        button{
+            width: 100px;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #onBtn{
+            background-color: green;
+            color: white;
+        }
+
+        #offBtn{
+            background-color: red;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Bulb</h1>
+        <div class="circle", id="circle">
+            <h2></h2>
+        </div>
+        <div class="on-off">
+            <button id="onBtn">ON</button>
+            <button id="offBtn">OFF</button>
+        </div>
+    </div>
+
+    <script>
+        const circle = document.getElementById("circle");
+        const onBtn = document.getElementById("onBtn");
+        const offBtn = document.getElementById("offBtn");
+
+        onBtn.addEventListener("click", function(){
+            circle.style.backgroundColor = "yellow";
+            circle.style.boxShadow = "0 0 60px yellow";
+        });
+
+        offBtn.addEventListener("click", function(){
+            circle.style.backgroundColor = "white";
+            circle.style.boxShadow = "none";
+        });
+    </script>
+</body>
+</html>

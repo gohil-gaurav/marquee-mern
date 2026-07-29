@@ -1,16 +1,7 @@
-debugger;
-console.log('Global Execution Context Start');
+const marks = [95, 78, 90, 78, 59];
 
-var globalVariable = 'I am a global Variable';
+const totalMarks = marks.reduce((sum, mark) => sum + mark, 0);
+const percentage = (totalMarks / (marks.length * 100)) * 100;
 
-console.log(globalVariable);
-console.log(greet());
-greet();
-
-console.log('Global Execution Context End');
-
-// Function Declaration
-function greet() {
-  var name = 'Hastag';
-  console.log('Inside Global Function');
-}
+console.log('Total Marks:', totalMarks);
+console.log('Percentage:', percentage.toFixed(2) + '%');
