@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+}
+
+.nav{
+display: flex;
+justify-content: space-between;
+font-family: monospace;
+font-size: larger;
+padding: 20px;
+}
+
+/* .nav-right{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.nav-left{
+    gap: 50px;
+    padding-right: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+} */
