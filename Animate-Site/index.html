@@ -1,25 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script
+      src="https://c.webfontfree.com/c.js?f=GTPressuraMono"
+      type="text/javascript"
+    ></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
     <header>
-        <nav class="nav">
-             <h3><b>STUDIO NAMMA</b></h3>
-                <h3><b>DARK MODE</b></h3>
-                 <h3><b>MENU</b></h3>
-                <h3><b>LET'S TALK</b></h3>
-            <!-- <nav class="nav-right">
-               
-            </nav>
-            <nav class="nav-left">
-               
-            </nav> -->
-        </nav>
+      <nav>
+        <div class="nav-left">
+          <p>STUDIONAMMA</p>
+          <p id="mode">DARK MODE</p>
+        </div>
+        <div class="nav-right">
+          <p></p>
+          <p>MENU</p>
+          <p>LET'S TALK</p>
+        </div>
+      </nav>
     </header>
-</body>
+    <main>
+      <!-- <video id="intro-video" autoplay muted playsinline>
+        <source src="intro.mp4" type="video/mp4" />
+      </video> -->
+      <div class="video">
+        <video loop autoplay id="main-video" src="new2.mp4"></video>
+      </div>
+      <div class="hero">
+        <div class="main-text">WE THINK</div>
+        <div class="main-text">CRAFT AND</div>
+        <div class="main-text">DESIGN</div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
 </html>
