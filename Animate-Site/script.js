@@ -194,3 +194,20 @@ contactText.addEventListener('click', (e) => {
     contactFormOverlay.style.top = '-100%';
   }
 });
+
+
+const interestItem = document.querySelectorAll("#intrest-item span");
+
+interestItem.forEach((e) => {
+
+  e.addEventListener("click", (e) => {
+
+    // To remove classes from all the Elements
+    interestItem.forEach((span) => {
+      span.classList.remove("active");
+    });
+      // Add CSS : .class add kiya hai
+      e.target.classList.add("active");
+
+    });
+  });
